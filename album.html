@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos</title>
+    <style>
+        /* Container to hold photos */
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping of images */
+            justify-content: space-around; /* Distribute images evenly */
+            gap: 20px; /* Gap between images */
+            padding: 20px;
+        }
+
+        /* Styling for individual images */
+        .photo-container img {
+            width: 200px; /* Fixed width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+
+        /* Optional: Add some padding and styling to the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        /* Styling for video section */
+        #video {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Add some styling for the video */
+        #video video {
+            width: 80%; /* Adjust width of video */
+            border-radius: 10px; /* Rounded corners for video */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>I want more Memories Together, Sara</h1>
+    
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Watch the Video: "Can Unit as No Matter the Distance"</h2>
+        <video controls>
+            <source src="music/love2.mp4"  type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <div class="photo-container">
+        <img src="images/album8.jpg" alt="Photo 8">
+        <img src="images/album9.jpg" alt="Photo 9">
+        <img src="images/album10.jpg" alt="Photo 10">
+        <img src="images/album11.jpg" alt="Photo 11">
+        <img src="images/album12.jpg" alt="Photo 12">
+        <img src="images/album13.png" alt="Photo 13">
+        <img src="images/album1.jpg" alt="Photo 1">
+        <img src="images/album2.jpg" alt="Photo 2">
+        <img src="images/album3.jpg" alt="Photo 3">
+        <img src="images/album4.jpg" alt="Photo 4">
+        <img src="images/album5.jpg" alt="Photo 5">
+        <img src="images/album6.jpg" alt="Photo 6">
+        <img src="images/album7.jpg" alt="Photo 7">
+        <!-- More images can be added here -->
+    </div>
+</body>
+</html>
